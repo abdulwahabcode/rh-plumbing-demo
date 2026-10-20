@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RH Plumbing — Plumber in Solihull &amp; Birmingham | Repairs, Bathrooms &amp; Emergencies</title>
+<meta name="description" content="RH Plumbing — friendly local plumber covering Solihull & Birmingham. Repairs and leaks, bathroom installations, radiators, blocked drains and emergency callouts. Quick quote on WhatsApp: 07809 476984.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Work+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+  :root{
+    /* Palette — warm putty, burgundy-wine & antique gold (60-30-10) */
+    --putty:#F4F0E8;        /* 60% light base */
+    --putty-alt:#EAE3D3;    /* alt light band */
+    --card:#FCFAF4;         /* cards on putty */
+    --wine-black:#221016;  /* tinted black — dark bands / footer */
+    --wine-deep:#401A24;   /* 30% dark sections */
+    --wine:#55222F;         /* cards / steps on dark */
+    --wine-line:#6E3A47;    /* hairlines on dark */
+    --gold:#B08B57;         /* 10% accent — CTAs & highlights only */
+    --gold-hover:#997448;
+    --gold-soft:#D3B285;    /* gold on dark */
+    --ink:#2C2126;          /* text on light */
+    --ink-soft:#6E5F63;     /* secondary text on light */
+    --offwhite:#F2EAE2;     /* text on dark — never pure white */
+    --muted-dark:#C9AFB4;   /* secondary text on dark */
+    --wa:#3E7C4F;           /* muted WhatsApp green — functional only */
+    --wa-hover:#356B44;
+    --radius:14px;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  html,body{overflow-x:hidden}
+  body{
+    font-family:'Work Sans',system-ui,sans-serif;
+    background:var(--putty);
+    color:var(--ink);
+    line-height:1.62;
+    font-size:16.5px;
+    -webkit-font-smoothing:antialiased;
+  }
+  img{max-width:100%;display:block}
+  a{text-decoration:none;color:inherit}
+  .wrap{width:min(1180px,100% - 2.5rem);margin-inline:auto}
+  .display{font-family:'Bricolage Grotesque','Work Sans',sans-serif}
+  .eyebrow{
+    display:inline-flex;align-items:center;gap:.6rem;
+    font-size:.76rem;font-weight:700;letter-spacing:.24em;text-transform:uppercase;color:var(--wine);
+  }
+  .eyebrow::before{content:"";width:2.2rem;height:2px;background:var(--gold);border-radius:2px}
+  .btn{
+    display:inline-flex;align-items:center;justify-content:center;gap:.55rem;
+    font-weight:700;font-size:.96rem;letter-spacing:.02em;
+    padding:.95rem 1.7rem;border-radius:999px;
+    transition:background .25s ease,transform .25s ease;
+    cursor:pointer;border:1.5px solid transparent;white-space:nowrap;
+  }
+  .btn svg{width:19px;height:19px;flex:none}
+  .btn-wine{background:var(--wine-deep);color:var(--offwhite)}
+  .btn-wine:hover{background:var(--wine);transform:translateY(-2px)}
+  .btn-gold{background:var(--gold);color:#241708}
+  .btn-gold:hover{background:var(--gold-hover);transform:translateY(-2px)}
+  .btn-wa{background:var(--wa);color:#F2F5EC}
+  .btn-wa:hover{background:var(--wa-hover);transform:translateY(-2px)}
+  .btn-ghost{background:transparent;color:var(--offwhite);border-color:var(--wine-line)}
+  .btn-ghost:hover{border-color:var(--gold);color:var(--gold-soft)}
+  section{padding:5.4rem 0}
+  .sec-head{max-width:46rem;margin-bottom:3rem}
+  .sec-head h2{font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:clamp(2rem,4.4vw,3.1rem);line-height:1.08;letter-spacing:-.01em;margin:.75rem 0 .9rem}
+  .sec-head h2 .gold{color:var(--gold-hover)}
+  .sec-head p{color:var(--ink-soft);font-size:1.06rem}
+  .on-dark .eyebrow{color:var(--gold-soft)}
+  .on-dark h2{color:var(--offwhite)}
+  .on-dark h2 .gold{color:var(--gold-soft)}
+  .on-dark p{color:var(--muted-dark)}
+  .reveal{opacity:0;transform:translateY(26px);transition:opacity .8s ease,transform .8s ease}
+  .reveal.visible{opacity:1;transform:none}
+
+  /* ---------- Header (light) ---------- */
+  header{
+    position:sticky;top:0;z-index:60;
+    background:rgba(244,240,232,.94);backdrop-filter:blur(10px);
+    border-bottom:1px solid var(--putty-alt);
+  }
+  .header-in{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:.8rem 0}
+  .logo{display:flex;align-items:center;gap:.75rem}
+  .logo-mark{
+    width:44px;height:44px;flex:none;border-radius:12px;
+    background:var(--wine-deep);color:var(--gold-soft);
+    display:grid;place-items:center;
+    font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:1.05rem;letter-spacing:.02em;
+  }
+  .logo-text{line-height:1.12}
+  .logo-text .name{font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:1.3rem;display:block;color:var(--ink)}
+  .logo-text small{font-size:.64rem;font-weight:700;letter-spacing:.28em;text-transform:uppercase;color:var(--gold-hover)}
+  nav.main-nav{display:flex;gap:2rem}
+  nav.main-nav a{color:var(--ink-soft);font-size:.93rem;font-weight:600;transition:color .2s}
+  nav.main-nav a:hover{color:var(--wine)}
+  .header-call{
+    display:inline-flex;align-items:center;gap:.5rem;
+    border:1.5px solid var(--wine-deep);color:var(--wine-deep);
+    font-weight:700;font-size:.92rem;padding:.55rem 1.15rem;border-radius:999px;
+    transition:background .2s,color .2s;
+  }
+  .header-call:hover{background:var(--wine-deep);color:var(--offwhite)}
+  .header-call svg{width:16px;height:16px}
+
+  /* ---------- Hero (light, split) ---------- */
+  .hero{padding:4.6rem 0 4.2rem;position:relative;
+    background:
+      radial-gradient(46rem 26rem at 105% -10%,rgba(176,139,87,.16),transparent 55%),
+      radial-gradient(38rem 24rem at -12% 108%,rgba(85,34,47,.10),transparent 55%),
+      var(--putty);
+  }
+  .hero-grid{display:grid;grid-template-columns:1.02fr .98fr;gap:3.4rem;align-items:center}
+  .hero h1{
+    font-family:'Bricolage Grotesque',sans-serif;font-weight:800;
+    font-size:clamp(2.6rem,5.6vw,4.3rem);line-height:1.02;letter-spacing:-.015em;
+    margin:1rem 0 1.15rem;color:var(--ink);
+  }
+  .hero h1 .gold{color:var(--gold-hover)}
+  .hero h1 .wine{color:var(--wine)}
+  .hero .lede{font-size:1.13rem;color:var(--ink-soft);max-width:34rem;margin-bottom:2rem}
+  .hero-ctas{display:flex;gap:.9rem;flex-wrap:wrap}
+  .hero-note{display:flex;align-items:center;gap:.55rem;margin-top:1.4rem;font-size:.93rem;font-weight:600;color:var(--ink-soft)}
+  .hero-note svg{width:18px;height:18px;color:var(--gold-hover);flex:none}
+  .hero-media{position:relative}
+  .hero-media .frame{
+    position:absolute;inset:0;transform:translate(16px,16px);
+    border:2px solid var(--gold);border-radius:20px;z-index:0;
+  }
+  .hero-media img.main{
+    position:relative;z-index:1;width:100%;height:520px;object-fit:cover;border-radius:20px;
+    box-shadow:0 30px 60px -25px rgba(34,16,22,.35);
+  }
+  .hero-chip{
+    position:absolute;z-index:2;left:-14px;bottom:26px;
+    background:var(--card);border:1px solid var(--putty-alt);border-radius:var(--radius);
+    box-shadow:0 18px 38px -14px rgba(34,16,22,.28);
+    padding:.9rem 1.1rem;display:flex;gap:.8rem;align-items:center;max-width:19rem;
+  }
+  .hero-chip .ic{width:42px;height:42px;flex:none;border-radius:50%;background:var(--wa);color:#F2F5EC;display:grid;place-items:center}
+  .hero-chip .ic svg{width:21px;height:21px}
+  .hero-chip strong{display:block;font-family:'Bricolage Grotesque',sans-serif;font-size:.98rem;line-height:1.25;color:var(--ink)}
+  .hero-chip span{font-size:.84rem;color:var(--ink-soft)}
+
+  /* ---------- Wine ticker ---------- */
+  .ticker{background:var(--wine-deep);color:var(--offwhite);overflow:hidden;padding:.95rem 0;border-block:3px solid var(--gold)}
+  .ticker-track{display:flex;gap:0;width:max-content;animation:tick 30s linear infinite}
+  .ticker span{
+    font-family:'Bricolage Grotesque',sans-serif;font-weight:700;font-size:.95rem;letter-spacing:.14em;text-transform:uppercase;
+    padding:0 1.4rem;white-space:nowrap;display:inline-flex;align-items:center;gap:2.8rem;
+  }
+  .ticker span::after{content:"";width:7px;height:7px;border-radius:50%;background:var(--gold)}
+  @keyframes tick{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+
+  /* ---------- Assurance row ---------- */
+  .assure{padding:3.4rem 0 0}
+  .assure-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1.1rem}
+  .assure-item{display:flex;gap:.8rem;align-items:flex-start;background:var(--card);border:1px solid var(--putty-alt);border-radius:var(--radius);padding:1.05rem 1.1rem}
+  .assure-item svg{width:22px;height:22px;flex:none;color:var(--gold-hover);margin-top:.15rem}
+  .assure-item strong{display:block;font-family:'Bricolage Grotesque',sans-serif;font-size:.99rem;line-height:1.3}
+  .assure-item span{font-size:.87rem;color:var(--ink-soft)}
+
+  /* ---------- Services ---------- */
+  .services{background:var(--putty-alt)}
+  .svc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.3rem}
+  .svc{
+    background:var(--card);border:1px solid rgba(64,26,36,.08);border-radius:18px;
+    padding:1.8rem 1.6rem;transition:transform .25s ease,box-shadow .25s ease;
+  }
+  .svc:hover{transform:translateY(-5px);box-shadow:0 22px 40px -22px rgba(34,16,22,.35)}
+  .svc .ic{
+    width:52px;height:52px;border-radius:14px;background:var(--wine-deep);color:var(--gold-soft);
+    display:grid;place-items:center;margin-bottom:1.1rem;
+  }
+  .svc .ic svg{width:25px;height:25px}
+  .svc h3{font-family:'Bricolage Grotesque',sans-serif;font-weight:700;font-size:1.22rem;margin-bottom:.5rem}
+  .svc p{color:var(--ink-soft);font-size:.96rem}
+  .svc.emergency{border-top:5px solid var(--gold)}
+  .svc .tag{
+    display:inline-block;font-size:.68rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;
+    color:var(--wine);background:rgba(176,139,87,.18);border:1px solid rgba(176,139,87,.45);
+    padding:.28rem .6rem;border-radius:999px;margin-bottom:.9rem;
+  }
+
+  /* ---------- Why RH (dark wine) ---------- */
+  .why{background:var(--wine-black);color:var(--offwhite)}
+  .why-grid{display:grid;grid-template-columns:1fr 1.15fr;gap:3.4rem;align-items:start}
+  .why-photo{border-radius:18px;overflow:hidden;margin-top:2rem;border:1px solid var(--wine-line)}
+  .why-photo img{width:100%;height:300px;object-fit:cover;filter:grayscale(1) contrast(1.05)}
+  .why-photo figcaption{padding:.8rem 1.1rem;font-size:.88rem;color:var(--muted-dark);background:var(--wine-deep)}
+  .why-cards{display:grid;grid-template-columns:1fr 1fr;gap:1.2rem}
+  .why-card{background:var(--wine-deep);border:1px solid var(--wine-line);border-radius:16px;padding:1.7rem 1.5rem}
+  .why-card .num{font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:1.5rem;color:var(--gold-soft);display:block;margin-bottom:.6rem}
+  .why-card h3{font-family:'Bricolage Grotesque',sans-serif;font-weight:700;font-size:1.13rem;margin-bottom:.45rem;color:var(--offwhite)}
+  .why-card p{color:var(--muted-dark);font-size:.94rem}
+
+  /* ---------- Gallery ---------- */
+  .gal-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1.2rem}
+  .gal{border-radius:16px;overflow:hidden;position:relative;background:var(--wine-black)}
+  .gal img{width:100%;height:280px;object-fit:cover;transition:transform .5s ease}
+  .gal:hover img{transform:scale(1.05)}
+  .gal figcaption{
+    position:absolute;left:0;right:0;bottom:0;padding:2.2rem 1.1rem .95rem;
+    background:linear-gradient(transparent,rgba(34,16,22,.88));
+    color:var(--offwhite);font-family:'Bricolage Grotesque',sans-serif;font-weight:700;font-size:.98rem;
+  }
+
+  /* ---------- Steps ---------- */
+  .steps{background:var(--putty-alt)}
+  .steps-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.3rem}
+  .step{background:var(--card);border:1px solid rgba(64,26,36,.08);border-radius:18px;padding:2rem 1.7rem}
+  .step .n{
+    font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:2.6rem;line-height:1;
+    color:var(--wine);display:block;margin-bottom:1rem;
+  }
+  .step .n::after{content:"";display:block;width:2.6rem;height:3px;background:var(--gold);border-radius:2px;margin-top:.7rem}
+  .step h3{font-family:'Bricolage Grotesque',sans-serif;font-weight:700;font-size:1.2rem;margin-bottom:.5rem}
+  .step p{color:var(--ink-soft);font-size:.96rem}
+
+  /* ---------- Contact ---------- */
+  .contact{background:var(--wine-deep);color:var(--offwhite);text-align:center}
+  .contact .eyebrow{color:var(--gold-soft);justify-content:center}
+  .contact .eyebrow::before{background:var(--gold)}
+  .contact h2{font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:clamp(2.1rem,5vw,3.4rem);line-height:1.06;margin:.9rem 0 1rem}
+  .contact h2 .gold{color:var(--gold-soft)}
+  .contact p{color:var(--muted-dark);max-width:38rem;margin:0 auto 2.2rem;font-size:1.05rem}
+  .contact .big-num{
+    font-family:'Bricolage Grotesque',sans-serif;font-weight:800;letter-spacing:.01em;
+    font-size:clamp(2rem,6.5vw,3.6rem);color:var(--offwhite);display:block;margin-bottom:2rem;
+  }
+  .contact .big-num:hover{color:var(--gold-soft)}
+  .contact-ctas{display:flex;gap:.9rem;justify-content:center;flex-wrap:wrap}
+  .areas{display:flex;gap:.55rem;flex-wrap:wrap;justify-content:center;margin-top:2.6rem}
+  .areas span{
+    font-size:.82rem;font-weight:600;letter-spacing:.05em;color:var(--muted-dark);
+    border:1px solid var(--wine-line);border-radius:999px;padding:.4rem .85rem;
+  }
+
+  /* ---------- Footer ---------- */
+  footer{background:var(--wine-black);color:var(--muted-dark);padding:2.6rem 0}
+  .foot-in{display:flex;justify-content:space-between;gap:1.5rem;flex-wrap:wrap;align-items:center}
+  .foot-in .fbrand{font-family:'Bricolage Grotesque',sans-serif;font-weight:800;color:var(--offwhite);font-size:1.1rem}
+  footer a:hover{color:var(--gold-soft)}
+  .foot-links{display:flex;gap:1.6rem;flex-wrap:wrap;font-size:.92rem;font-weight:600}
+
+  /* ---------- WhatsApp float ---------- */
+  .wa-float{
+    position:fixed;right:20px;bottom:20px;z-index:80;
+    width:60px;height:60px;border-radius:50%;background:var(--wa);color:#F2F5EC;
+    display:grid;place-items:center;box-shadow:0 14px 30px -8px rgba(34,16,22,.45);
+    transition:transform .25s ease,background .25s ease;
+  }
+  .wa-float:hover{transform:scale(1.08);background:var(--wa-hover)}
+  .wa-float svg{width:30px;height:30px}
+  .wa-float::after{
+    content:"";position:absolute;inset:-6px;border-radius:50%;
+    border:2px solid rgba(62,124,79,.45);animation:pulse 2.2s ease-out infinite;
+  }
+  @keyframes pulse{0%{transform:scale(.85);opacity:1}100%{transform:scale(1.25);opacity:0}}
+
+  /* ---------- Responsive ---------- */
+  @media (max-width:1020px){
+    .svc-grid{grid-template-columns:repeat(2,1fr)}
+    .gal-grid{grid-template-columns:repeat(2,1fr)}
+    .assure-grid{grid-template-columns:repeat(2,1fr)}
+    .why-grid{grid-template-columns:1fr}
+    .hero-media img.main{height:440px}
+  }
+  @media (max-width:820px){
+    nav.main-nav{display:none}
+    .hero-grid{grid-template-columns:1fr;gap:2.6rem}
+    .hero-media img.main{height:340px}
+    .hero-chip{left:8px;bottom:12px}
+    .steps-grid{grid-template-columns:1fr}
+  }
+  @media (max-width:560px){
+    section{padding:4rem 0}
+    .svc-grid{grid-template-columns:1fr}
+    .why-cards{grid-template-columns:1fr}
+    .assure-grid{grid-template-columns:1fr}
+    .gal img{height:210px}
+    .hero-ctas .btn,.contact-ctas .btn{width:100%}
+    .header-call .num-text{display:none}
+    .header-call{padding:.6rem .7rem}
+    .hero{padding-top:3rem}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap header-in">
+    <a class="logo" href="#top" aria-label="RH Plumbing — home">
+      <span class="logo-mark">RH</span>
+      <span class="logo-text">
+        <span class="name">RH Plumbing</span>
+        <small>Solihull · Birmingham</small>
+      </span>
+    </a>
+    <nav class="main-nav" aria-label="Main">
+      <a href="#services">Services</a>
+      <a href="#why">Why RH</a>
+      <a href="#work">Recent Work</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a class="header-call" href="tel:+447809476984">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"/></svg>
+      <span class="num-text">07809 476984</span>
+    </a>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div class="reveal">
+        <span class="eyebrow">Plumber · Solihull &amp; Birmingham</span>
+        <h1>Good plumbing, <span class="wine">done</span> <span class="gold">properly.</span></h1>
+        <p class="lede">From a dripping tap to a full bathroom installation, RH Plumbing keeps homes across Solihull and Birmingham flowing as they should. Friendly, tidy and straight with prices — message us on WhatsApp for a quick quote.</p>
+        <div class="hero-ctas">
+          <a class="btn btn-wine" href="tel:+447809476984">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"/></svg>
+            Call 07809 476984
+          </a>
+          <a class="btn btn-wa" href="https://wa.me/447809476984" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            WhatsApp Us
+          </a>
+        </div>
+        <div class="hero-note">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z"/></svg>
+          No-obligation quotes — the price is agreed before any work starts.
+        </div>
+      </div>
+      <div class="hero-media reveal">
+        <div class="frame" aria-hidden="true"></div>
+        <img class="main" src="https://images.unsplash.com/photo-1676210134188-4c05dd172f89?q=80&w=1200&auto=format&fit=crop" alt="Plumber repairing pipework under a kitchen sink">
+        <div class="hero-chip">
+          <span class="ic">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          </span>
+          <div>
+            <strong>Quickest way to a quote?</strong>
+            <span>Send us a photo of the problem on WhatsApp.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Assurance row -->
+    <div class="wrap assure">
+      <div class="assure-grid">
+        <div class="assure-item reveal">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z"/><path d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z"/></svg>
+          <div><strong>Properly local</strong><span>A Solihull &amp; Birmingham plumber — not a national call centre.</span></div>
+        </div>
+        <div class="assure-item reveal">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 6v6h4.5"/></svg>
+          <div><strong>Fast replies</strong><span>Message on WhatsApp and get a straight answer, quickly.</span></div>
+        </div>
+        <div class="assure-item reveal">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z"/></svg>
+          <div><strong>Honest pricing</strong><span>Quoted upfront and agreed first — no surprises at the end.</span></div>
+        </div>
+        <div class="assure-item reveal">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l1.9 5.7 5.6 1.8-5.6 1.8L12 18l-1.9-5.7L4.5 10.5l5.6-1.8L12 3z"/><path d="M19 15.5l.8 2.2 2.2.8-2.2.8-.8 2.2-.8-2.2-2.2-.8 2.2-.8.8-2.2z"/></svg>
+          <div><strong>Tidy work</strong><span>Care taken in your home, and everything left clean.</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Ticker -->
+  <div class="ticker" aria-hidden="true">
+    <div class="ticker-track">
+      <span>Repairs &amp; Leaks</span><span>Bathroom Installations</span><span>Radiators &amp; Heating</span><span>Blocked Drains</span><span>Kitchen Plumbing</span><span>Emergency Callouts</span>
+      <span>Repairs &amp; Leaks</span><span>Bathroom Installations</span><span>Radiators &amp; Heating</span><span>Blocked Drains</span><span>Kitchen Plumbing</span><span>Emergency Callouts</span>
+    </div>
+  </div>
+
+  <!-- SERVICES -->
+  <section class="services" id="services">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <span class="eyebrow">What We Do</span>
+        <h2>Everyday plumbing, <span class="gold">sorted.</span></h2>
+        <p>Big job or small, it gets the same care. Here is what RH Plumbing is called out for most around Solihull and Birmingham.</p>
+      </div>
+      <div class="svc-grid">
+        <article class="svc reveal">
+          <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M11.42 15.17L17.25 21A2.652 2.652 0 0021 17.25l-5.877-5.877M11.42 15.17l2.496-3.03c.317-.384.74-.626 1.208-.766M11.42 15.17l-4.655 5.653a2.548 2.548 0 11-3.586-3.586l6.837-5.63m5.108-.233c.55-.164 1.163-.188 1.743-.14a4.5 4.5 0 004.486-6.336l-3.276 3.277a3.004 3.004 0 01-2.25-2.25l3.276-3.276a4.5 4.5 0 00-6.336 4.486c.091 1.076-.071 2.264-.904 2.95l-.102.085"/></svg></span>
+          <h3>Repairs &amp; Leaks</h3>
+          <p>Dripping taps, leaking pipes, running toilets and faulty flushes. We find the cause, fix it properly and make sure it stays fixed.</p>
+        </article>
+        <article class="svc reveal">
+          <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12h18M5 12v2.5A4.5 4.5 0 009.5 19h5A4.5 4.5 0 0019 14.5V12M7 12V6a2.5 2.5 0 015 0M7 21l-.7 1.5M17 21l.7 1.5"/></svg></span>
+          <h3>Bathroom Installations</h3>
+          <p>Full bathroom installations and refits — suites, showers, baths and all the pipework behind them, fitted neatly and tested before we leave.</p>
+        </article>
+        <article class="svc reveal">
+          <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3.5" y="5" width="17" height="12" rx="2"/><path d="M8 5v12M12 5v12M16 5v12M6.5 20.5h11"/></svg></span>
+          <h3>Radiators &amp; Heating Plumbing</h3>
+          <p>New radiators, replacements and heating pipework. Cold spots, noisy pipes or a radiator that never warms up — we will get the heat moving again.</p>
+        </article>
+        <article class="svc reveal">
+          <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0l3.181 3.183a8.25 8.25 0 0013.803-3.7M4.031 9.865a8.25 8.25 0 0113.803-3.7l3.181 3.182m0-4.991v4.99"/></svg></span>
+          <h3>Blocked Drains &amp; Toilets</h3>
+          <p>Slow sinks, blocked toilets and drains that will not shift. We clear the blockage and check the flow before calling it done.</p>
+        </article>
+        <article class="svc reveal">
+          <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M6.5 3v4.5M6.5 5.25H13a4 4 0 014 4V11h-3.5V9.25a.5.5 0 00-.5-.5H6.5M12.5 14.5a2.75 2.75 0 105.5 0c0-1.5-2.75-4-2.75-4s-2.75 2.5-2.75 4z" transform="translate(-1.5 1)"/></svg></span>
+          <h3>Taps &amp; Kitchen Plumbing</h3>
+          <p>New taps fitted, sinks installed, and dishwashers and washing machines plumbed in properly — no leaks hiding under the units.</p>
+        </article>
+        <article class="svc emergency reveal">
+          <span class="tag">Priority</span>
+          <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z"/></svg></span>
+          <h3>Emergency Callouts</h3>
+          <p>Burst pipe, major leak or water where it should not be? Message us on WhatsApp — we will talk you through making it safe and arrange to get it sorted.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY RH -->
+  <section class="why on-dark" id="why">
+    <div class="wrap why-grid">
+      <div class="reveal">
+        <span class="eyebrow">Why RH Plumbing</span>
+        <h2 style="font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:clamp(2rem,4.4vw,3.1rem);line-height:1.08;margin:.75rem 0 .9rem">A local plumber you can <span style="color:var(--gold-soft)">actually reach.</span></h2>
+        <p style="color:var(--muted-dark);font-size:1.05rem">No call centres, no hard sell and no vanishing acts. Just a local plumber covering Solihull and Birmingham who answers messages, turns up when agreed and does the job properly.</p>
+        <figure class="why-photo">
+          <img src="https://images.unsplash.com/photo-1517646287270-a5a9ca602e5c?q=80&w=1000&auto=format&fit=crop" alt="Close-up of a dripping tap">
+          <figcaption>A dripping tap never fixes itself — but it is usually a quick, inexpensive repair.</figcaption>
+        </figure>
+      </div>
+      <div class="why-cards">
+        <div class="why-card reveal">
+          <span class="num">01</span>
+          <h3>Local, not a call centre</h3>
+          <p>You deal with the person doing the work. Local knowledge of Solihull and Birmingham homes — and no travelling halfway across the country to reach you.</p>
+        </div>
+        <div class="why-card reveal">
+          <span class="num">02</span>
+          <h3>Fast on WhatsApp</h3>
+          <p>Send a message — a photo of the problem helps even more — and get a quick, straight answer about what it needs and what it is likely to cost.</p>
+        </div>
+        <div class="why-card reveal">
+          <span class="num">03</span>
+          <h3>Honest, upfront quotes</h3>
+          <p>The price is explained and agreed before work starts. If anything unexpected turns up, you hear about it first — never after.</p>
+        </div>
+        <div class="why-card reveal">
+          <span class="num">04</span>
+          <h3>Tidy, careful work</h3>
+          <p>Dust sheets down, mess cleared, everything tested before we pack up. Your home is left as we found it — just with the plumbing fixed.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section id="work">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <span class="eyebrow">Recent Work</span>
+        <h2>The kind of work <span class="gold">we do every week.</span></h2>
+        <p>Bathrooms fitted, leaks traced, taps replaced — a feel for the standard of finish you can expect from RH Plumbing.</p>
+      </div>
+      <div class="gal-grid">
+        <figure class="gal reveal">
+          <img src="https://images.unsplash.com/photo-1620626011761-996317b8d101?q=80&w=800&auto=format&fit=crop" alt="Modern bathroom with a freestanding bath">
+          <figcaption>Bathroom Installations</figcaption>
+        </figure>
+        <figure class="gal reveal">
+          <img src="https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?q=80&w=800&auto=format&fit=crop" alt="Traditional white bathroom suite with pedestal basin and toilet">
+          <figcaption>Suites, Basins &amp; Toilets</figcaption>
+        </figure>
+        <figure class="gal reveal">
+          <img src="https://images.unsplash.com/photo-1542013936693-884638332954?q=80&w=800&auto=format&fit=crop" alt="New chrome kitchen tap running water into a sink">
+          <figcaption>Taps &amp; Kitchen Plumbing</figcaption>
+        </figure>
+        <figure class="gal reveal">
+          <img src="https://images.unsplash.com/photo-1504148455328-c376907d081c?q=80&w=800&auto=format&fit=crop" alt="Cordless drill on site during a plumbing repair">
+          <figcaption>Repairs Done On Site</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- STEPS -->
+  <section class="steps">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <span class="eyebrow">How It Works</span>
+        <h2>Sorted in <span class="gold">three steps.</span></h2>
+      </div>
+      <div class="steps-grid">
+        <div class="step reveal">
+          <span class="n">1</span>
+          <h3>Message or call</h3>
+          <p>Tell us what is going on — a photo on WhatsApp helps us understand the job and quote faster.</p>
+        </div>
+        <div class="step reveal">
+          <span class="n">2</span>
+          <h3>Get a clear quote</h3>
+          <p>You get an honest price, agreed before any work starts. No obligation, and no pressure either way.</p>
+        </div>
+        <div class="step reveal">
+          <span class="n">3</span>
+          <h3>Job done properly</h3>
+          <p>We turn up when agreed, do the work tidily and test everything before we leave.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact" id="contact">
+    <div class="wrap reveal">
+      <span class="eyebrow">Get In Touch</span>
+      <h2>Tell us what has <span class="gold">gone wrong.</span></h2>
+      <p>Call, message on WhatsApp or drop us an email — whichever suits you. Photos of the problem are always welcome.</p>
+      <a class="big-num" href="tel:+447809476984">07809 476984</a>
+      <div class="contact-ctas">
+        <a class="btn btn-gold" href="tel:+447809476984">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"/></svg>
+          Call Now
+        </a>
+        <a class="btn btn-wa" href="https://wa.me/447809476984" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          WhatsApp
+        </a>
+        <a class="btn btn-ghost" href="mailto:info@rhplumbingservices.co.uk">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75"/></svg>
+          Email Us
+        </a>
+      </div>
+      <div class="areas">
+        <span>Solihull</span><span>Birmingham</span><span>Shirley</span><span>Hall Green</span><span>Knowle</span><span>Dorridge</span><span>Acocks Green</span><span>Sheldon</span><span>&amp; surrounding areas</span>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap foot-in">
+    <span class="fbrand">RH Plumbing</span>
+    <div class="foot-links">
+      <a href="tel:+447809476984">07809 476984</a>
+      <a href="mailto:info@rhplumbingservices.co.uk">info@rhplumbingservices.co.uk</a>
+      <a href="https://wa.me/447809476984" target="_blank" rel="noopener">WhatsApp</a>
+    </div>
+    <span>Plumber covering Solihull &amp; Birmingham</span>
+  </div>
+</footer>
+
+<a class="wa-float" href="https://wa.me/447809476984" target="_blank" rel="noopener" aria-label="Message RH Plumbing on WhatsApp">
+  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+</a>
+
+<script>
+  var io = new IntersectionObserver(function(entries){
+    entries.forEach(function(e){
+      if(e.isIntersecting){ e.target.classList.add('visible'); io.unobserve(e.target); }
+    });
+  },{threshold:.12});
+  document.querySelectorAll('.reveal').forEach(function(el){ io.observe(el); });
+</script>
+</body>
+</html>
